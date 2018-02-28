@@ -24,7 +24,26 @@ const quizz = {
         ],
         answer: 0,
       },
-
+      {
+        title: 'Wich image compression format does not support transparency ?',
+        possibles : [
+          'JPEG',
+          'PNG',
+          'SVG',
+          'WebP',
+        ],
+        answer: 0,
+      },
+      {
+         title: 'Who is known as the inventor of the internet ?',
+        possibles : [
+          'Bjarne Stroustrup',
+          'Larry Page',
+          'Linus Torvalds',
+          'Tim Berners-Lee'
+        ],
+        answer: 3,
+      }, 
       {
         title: 'What problem is Djisktra algorithm solving ?',
         possibles : [
@@ -34,7 +53,7 @@ const quizz = {
           'Data sorting',
         ],
         answer: 2,
-      }
+      },
     ]
   }
 

@@ -22,7 +22,7 @@ const messages = {
     },
     contact: {
       negative_test: 'Better luck next time. If you are still interested in applying for position, click here, to send your contact info to hr@scandiweb.com',
-      positive_test: 'Well done, hard work deserves a tasty prize. Go and collect your waffles, if you wish to send your contact info to HR, click here.',
+      positive_test: 'Well done, hard work deserves a tasty prize. Go and collect your , if you wish to send your contact info to HR, click here.',
       get_in_touch: 'Get in touch',
       come_speak_with_us: 'Come to visit us and let\'s discuss in person. Our waffles are very tasty.',
     },
