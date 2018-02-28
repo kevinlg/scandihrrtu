@@ -1,6 +1,6 @@
 <template>
   <div >
-      <h1>Here are you result</h1>
+      <h1>{{$t('result.here_are_results')}}</h1>
       <div class='score--big'>{{result.correct}}/{{result.questionTaken}}</div>      
       <div @click='onNext' class='but but--next'>Next</div>
   </div>

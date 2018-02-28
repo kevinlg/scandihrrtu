@@ -3,12 +3,12 @@ const messages = {
     welecome_page: {
       intro: 'I am looking for a job as...',
       title_intern: 'Intern',
-      title_junior: 'Junior Devleoper',
-      title_exp_dev: 'Experienced Devleoper',
+      title_junior: 'Junior Developer',
+      title_exp_dev: 'Experienced Developer',
       ttile_pm: 'Project Manager',
       title_designer: 'Designer',
       title_digital_marketing_specialist: 'Digital Marketing specialist',
-      title_qa: 'Quality Insurance specialist',
+      title_qa: 'Quality Asssurance specialist',
       title_devops: 'System administrator/ Dev Ops',
       title_administrative: 'Administrative',
     },
@@ -20,11 +20,14 @@ const messages = {
       phone_number: 'Phone number',
       submit: 'Submit',
     },
+    result: {
+      here_are_results: 'Here are your results',
+    },
     contact: {
-      negative_test: 'Better luck next time. If you are still interested in applying for position, click here, to send your contact info to hr@scandiweb.com',
-      positive_test: 'Well done, hard work deserves a tasty prize. Go and collect your , if you wish to send your contact info to HR, click here.',
+      negative_test: 'Better luck next time. If you are still interested in applying for this position, send your contact info to hr@scandiweb.com with a message that we met at RTU career days.',
+      positive_test: 'Well done, hard work deserves a tasty prize. Go and collect your cotton candy. If you want to apply for this position, please send your CV to hr@scandiweb.com with a message that we met at RTU career days.',
       get_in_touch: 'Get in touch',
-      come_speak_with_us: 'Come to visit us and let\'s discuss in person. Our waffles are very tasty.',
+      come_speak_with_us: 'Come to visit us and let\'s discuss in person.',
     },
   },
   lv: {

@@ -7,7 +7,7 @@
     </div>    
     <WelcomeView v-if="isOnWelcomeScreen" id='view-1' class='page' @jobSelected='onJobSeclected' msg="Welcome to Your Vue.js App"/>
     <PersonalInfoView v-if="isOnPersoScreen" @userInfosUpdated='userInfoCompleted'  id='view-2' class='page' />
-    <Quiz v-if="isOnQuizScreen" id='view-3' @quizdone='onQuizDone' class='page' />
+    <Quiz  v-if="isOnQuizScreen" id='view-3' @quizdone='onQuizDone' class='page' ref='quizz' />
     <Result v-if='isOnResultScreen' class='page'  @onResultSeen='onResultSeen' :result='quizResult' />
     <Contact v-if='isOnContactScreen' class='page' @onContactMe='onWantToBeContacted' :positive='isQuizzGood'/>
     <div v-if='! isOnWelcomeScreen'  class='button-restart' @click='restart'>Restart</div>
@@ -89,7 +89,6 @@ export default {
 
     onResultSeen(evt){
       this.currentScreen = SCREEN_CONTACT;
-      setTimeout(() => {this.sendToFirebase();}, 10000);
     },
     
     onWantToBeContacted(evt) {
@@ -122,6 +121,9 @@ export default {
     },
 
     restart() {
+      if (this.currentScreen == SCREEN_CONTACT || this.currentScreen == SCREEN_RESULTS) {
+        this.sendToFirebase();
+      }
       this.resetData()
       this.currentScreen = SCREEN_WELCOME;
     },

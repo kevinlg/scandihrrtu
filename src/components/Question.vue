@@ -26,13 +26,15 @@ export default {
 
 <style lang="scss" scoped>
   .but--answer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background:white;
       color: black;
       font-size: 24px;
+      padding: 16px;
       font-weight: 700;
-      line-height: 56px;
-      width: 100%;
-      height: 56px;
-      margin-top: 16px;
+      width: 90%;
+      margin: 16px auto 0;
   }
 </style>
